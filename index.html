@@ -1,172 +1,256 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roadmap de Produto</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Roadmap do Produto</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        .key-results, .roadmap-objectives {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .results-table, .processes-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .results-table th, .results-table td, .processes-table th, .processes-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .results-table th, .processes-table th {
+            background-color: #f0f0f0;
+        }
+        .objectives-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .objectives-table th, .objectives-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .objectives-table th {
+            background-color: #f0f0f0;
+        }
+        .progress-bar-container {
+            height: 20px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #28a745; /* Cor indicando progresso */
+            width: 50%; /* Valor de exemplo */
+        }
+        .legend {
+            margin-top: 10px;
+        }
+        .legend span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .atrasado { background-color: #ffc107; }
+        .em-alerta { background-color: #dc3545; }
+        .no-prazo { background-color: #28a745; }
+    </style>
 </head>
 <body>
-    <div class="roadmap-container">
-        <header class="main-header">
-            <div class="squad-name">Nome do squad/diretoria</div>
-            <h1>Roadmap de produto</h1>
-            <h2>Nome da solução</h2>
-        </header>
+    <div class="container">
+        <h1>Roadmap de produto</h1>
+        <h2>Nome da solução</h2>
+        <p><b>Visão:</b> Contexto e resultados</p>
 
-        <section class="top-section">
-            <div class="vision-context">
-                <div class="related-areas">
-                    <strong>Áreas correlatas, áreas</strong>
-                </div>
-                <div class="vision-box">
-                    <strong>Visão</strong>
-                    <p>Contexto e resultados</p>
-                </div>
-            </div>
-            <div class="strategic-objective">
-                <strong>Objetivo estratégico</strong>
-                <img src="laptop-icon.png" alt="Laptop Icon" class="laptop-icon">
-                <div class="legend">
-                    <span class="legend-item legend-red">ABAIXO DA PROJEÇÃO</span>
-                    <span class="legend-item legend-yellow">DENTRO DA PROJEÇÃO</span>
-                    <span class="legend-item legend-green">SUPERIOR À PROJEÇÃO</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="key-results">
+        <div class="key-results">
             <h3>Key Results</h3>
-            <table>
+            <div>
+                <h4>Resultados</h4>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Baseline</th>
+                            <th>Target</th>
+                            <th>Current</th>
+                            <th>Outubro</th>
+                            <th>Novembro</th>
+                            <th>Dezembro</th>
+                            <th>Janeiro</th>
+                            <th>Fevereiro</th>
+                            <th>Março</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Monthly Active Users</th>
+                            <td>300</td>
+                            <td>1,000</td>
+                            <td>500</td>
+                            <td>371</td>
+                            <td>429</td>
+                            <td>449</td>
+                            <td>542</td>
+                            <td>495</td>
+                            <td>~530</td>
+                        </tr>
+                        <tr>
+                            <th>Ticket Médio</th>
+                            <td>205</td>
+                            <td>605</td>
+                            <td>405</td>
+                            <td>205</td>
+                            <td>205</td>
+                            <td>205</td>
+                            <td>225</td>
+                            <td>225</td>
+                            <td>305</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h4>Processos</h4>
+                <table class="processes-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Baseline</th>
+                            <th>Target</th>
+                            <th>Current</th>
+                            <th>Outubro</th>
+                            <th>Novembro</th>
+                            <th>Dezembro</th>
+                            <th>Janeiro</th>
+                            <th>Fevereiro</th>
+                            <th>Março</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Novos Clientes</th>
+                            <td>59</td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>83</td>
+                            <td>132</td>
+                            <td>110</td>
+                            <td>123</td>
+                            <td>82</td>
+                            <td>~100</td>
+                        </tr>
+                        <tr>
+                            <th>Churn Efetivo</th>
+                            <td>0%</td>
+                            <td>-5%</td>
+                            <td>-8%</td>
+                            <td>+15%</td>
+                            <td>-4%</td>
+                            <td>-6%</td>
+                            <td>-8%</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="roadmap-objectives">
+            <h3>Roadmap</h3>
+            <h4>Objetivos</h4>
+            <table class="objectives-table">
                 <thead>
                     <tr>
-                        <th>RESULTADOS</th>
-                        <th>Baseline</th>
-                        <th>Target</th>
-                        <th>Current</th>
-                        <th>Outubro</th>
-                        <th>Novembro</th>
-                        <th>Dezembro</th>
+                        <th>Objetivo de negócio</th>
+                        <th>Épico (agrupamento de features que atendem um objetivo de negócio)</th>
                         <th>Janeiro</th>
                         <th>Fevereiro</th>
                         <th>Março</th>
+                        <th>Abril</th>
+                        <th>Maio</th>
+                        <th>Junho</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>MONTHLY ACTIVE USERS</td>
-                        <td>300</td>
-                        <td>1,000</td>
-                        <td>500</td>
-                        <td class="status-red">371</td>
-                        <td class="status-yellow">429</td>
-                        <td class="status-yellow">449</td>
-                        <td class="status-green">542</td>
-                        <td class="status-green">495</td>
-                        <td class="status-green">>530</td>
+                        <td>Melhoria contínua</td>
+                        <td>PDCA's implementados</td>
+                        <td colspan="2" style="background-color: #28a745; color: white; text-align: center;">Em progresso</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td>TICKET MÉDIO</td>
-                        <td>20$</td>
-                        <td>60$</td>
-                        <td>40$</td>
-                        <td class="status-red">20$</td>
-                        <td class="status-red">20$</td>
-                        <td class="status-yellow">22$</td>
-                        <td class="status-yellow">22$</td>
-                        <td class="status-green">30$</td>
-                        <td class="status-green">30$</td>
+                        <td></td>
+                        <td>PDCA em implantação:</td>
+                        <td></td>
+                        <td colspan="3" style="background-color: #ffc107; color: white; text-align: center;">Em alerta</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2" style="background-color: #dc3545; color: white; text-align: center;">Atrasado</td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td colspan="3" style="background-color: #28a745; color: white; text-align: center;">No prazo</td>
+                        <td colspan="3"></td>
                     </tr>
                 </tbody>
             </table>
-            <div class="explanation">Explicação</div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>PROCESSOS</th>
-                        <th>Baseline</th>
-                        <th>Target</th>
-                        <th>Current</th>
-                        <th>Outubro</th>
-                        <th>Novembro</th>
-                        <th>Dezembro</th>
-                        <th>Janeiro</th>
-                        <th>Fevereiro</th>
-                        <th>Março</th>
-                    </tr>
-                </thead>
-                <tbody>
-                     <tr>
-                        <td>NOVOS CLIENTES</td>
-                        <td>59</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td class="status-green">83</td>
-                        <td class="status-green">132</td>
-                        <td class="status-green">110</td>
-                        <td class="status-green">123</td>
-                        <td class="status-red">82</td>
-                        <td class="status-red"><100</td>
-                    </tr>
-                    <tr>
-                        <td>CHURN EFETIVO</td>
-                        <td>0%</td>
-                        <td>-5%</td>
-                        <td>-8%</td>
-                        <td class="status-green">+15%</td>
-                        <td class="status-red">-4%</td>
-                        <td class="status-yellow">-6%</td>
-                        <td class="status-yellow">-8%</td>
-                        <td class="status-red">N/A</td>
-                        <td class="status-red">N/A</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="explanation">Explicação</div>
-        </section>
 
-        <section class="roadmap-timeline">
-            <h3>Roadmap <span class="roadmap-subtitle">Tecnologia | Processos | Cliente</span></h3>
-            <div class="timeline-grid" id="timelineGrid">
-                <div class="timeline-header-row"> <div>OBJETIVOS</div>
-                    <div>ÉPICOS</div>
-                    <div>Janeiro</div>
-                    <div>Fevereiro</div>
-                    <div>Março</div>
-                    <div>Abril</div>
-                    <div>Maio</div>
-                    <div>Junho</div>
-                </div>
-                </div>
-            <div class="timeline-legend">
-                <span class="legend-item legend-red-bg">ATRASADO</span>
-                <span class="legend-item legend-yellow-bg">EM ALERTA</span>
-                <span class="legend-item legend-green-bg" id="legendNoPrazo">NO PRAZO</span> </div>
-        </section>
+            <div class="legend">
+                Legenda:
+                <span class="atrasado"></span> Atrasado
+                <span class="em-alerta"></span> Em Alerta
+                <span class="no-prazo"></span> No Prazo
+            </div>
+        </div>
 
-        <section class="bottom-info">
-            <div class="continuous-improvement">
-                <h4>Melhoria contínua</h4>
-                <p>PDCAs implementados:</p>
-                <p>PDCA em implantação:</p>
-            </div>
-            <div class="delays-adjustments">
-                <h4>Atrasos e ajustes</h4>
-                <p>Explicação e próximos passos</p>
-                <p>1. Atrasei para gerar este template pois a vida é difícil.</p>
-            </div>
-        </section>
+        <div>
+            <h3>Atrazos e ajustes</h3>
+            <p><b>Explicação e próximos passos</b></p>
+            <ol>
+                <li>Atrairei para gerar este template pois a vida é difícil.</li>
+            </ol>
+        </div>
 
-        <footer class="main-footer">
-            <div class="platform-print">
-                Print da sua plataforma na loja e com 4.8 estrelas
-            </div>
-            <div class="owner-info">
-                <strong>Seu nome</strong>
-                <p>Mês de 2025</p>
-            </div>
-        </footer>
+        <div style="margin-top: 20px; font-size: small; color: #777;">
+            <p>Print da sua plataforma na loja e com 4.8 estrelas</p>
+            <p style="text-align: right;">Seu nome<br>Mai de 2025</p>
+        </div>
     </div>
-    <script src="js/timeline.js" defer></script>
 </body>
 </html>
