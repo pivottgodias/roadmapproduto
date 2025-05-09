@@ -1,0 +1,312 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2c2c2c; /* Cor de fundo escura principal */
+    color: #e0e0e0; /* Cor de texto clara principal */
+    margin: 0;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.roadmap-container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #333; /* Cor de fundo do container um pouco mais clara */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Cabeçalho Principal */
+.main-header {
+    background-color: #1a1a1a; /* Preto para o cabeçalho */
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+.main-header .squad-name {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+.main-header h1 {
+    margin: 5px 0;
+    font-size: 2.5em;
+}
+.main-header h2 {
+    margin: 5px 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #ddd;
+}
+
+/* Seção Superior (Visão e Objetivo) */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #404040; /* Fundo da seção */
+    border-radius: 8px;
+}
+.vision-context {
+    flex-basis: 65%;
+}
+.related-areas {
+    background-color: #4a4a4a;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+.vision-box {
+    background-color: #4a4a4a;
+    padding: 15px;
+    border-radius: 4px;
+}
+.vision-box strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+.strategic-objective {
+    flex-basis: 33%;
+    background-color: #4a4a4a;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+.strategic-objective strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.laptop-icon {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-bottom: 10px;
+    filter: invert(0.8); /* Para ícone escuro ficar claro */
+}
+.legend {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.legend-item {
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: white;
+}
+.legend-red { background-color: #d9534f; }
+.legend-yellow { background-color: #f0ad4e; }
+.legend-green { background-color: #5cb85c; }
+
+/* Key Results */
+.key-results {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #404040;
+    border-radius: 8px;
+}
+.key-results h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 10px; /* Para alinhar com a tabela */
+    border-left: 4px solid #5cb85c; /* Destaque verde */
+}
+.key-results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.key-results th, .key-results td {
+    border: 1px solid #555;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+.key-results th {
+    background-color: #383838;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+.key-results td:first-child { /* Coluna de Resultados/Processos */
+    background-color: #4a5a70; /* Azul escuro da imagem */
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+.status-red { background-color: #d9534f; color: white; }
+.status-yellow { background-color: #f0ad4e; color: black; }
+.status-green { background-color: #5cb85c; color: white; }
+
+.explanation {
+    font-size: 0.8em;
+    color: #bbb;
+    text-align: right;
+    margin-bottom: 15px;
+    margin-right: 10px; /* Ajuste conforme necessário */
+}
+
+/* Roadmap Timeline */
+.roadmap-timeline {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #303030; /* Fundo um pouco mais escuro para o roadmap */
+    border-radius: 8px;
+}
+.roadmap-timeline h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-left: 4px solid #f0ad4e; /* Destaque amarelo */
+    padding-left: 10px;
+}
+.roadmap-subtitle {
+    font-size: 0.6em;
+    font-weight: normal;
+    color: #ccc;
+}
+.timeline-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr repeat(6, 1fr); /* Objetivos, Épicos, Meses */
+    gap: 1px;
+    background-color: #555; /* Cor das bordas da grid */
+    border: 1px solid #555;
+    font-size: 0.85em;
+}
+.timeline-header > div, .timeline-row > div {
+    background-color: #383838;
+    padding: 8px;
+    text-align: left;
+}
+.timeline-header > div {
+    color: #e0e0e0;
+    font-weight: bold;
+    text-align: center;
+}
+.timeline-row > div {
+    background-color: #454545; /* Cor das células de dados */
+    min-height: 30px; /* Para barras de progresso */
+    display: flex;
+    align-items: center;
+}
+.timeline-row > div:nth-child(1), /* Objetivos */
+.timeline-row > div:nth-child(2)  /* Épicos */ {
+    background-color: #3a4a60; /* Azul escuro para colunas de objetivo/épico */
+    color: white;
+    font-weight: bold;
+}
+
+.timeline-bar-container {
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* As células já têm fundo */
+    padding: 2px 0 !important; /* Remover padding para barra ocupar espaço */
+    display: flex;
+    align-items: center;
+}
+.timeline-bar {
+    height: 60%; /* Altura da barra de progresso */
+    border-radius: 4px;
+    opacity: 0.8;
+}
+.timeline-bar.continue { /* Para barras que continuam de outra */
+    opacity: 0.6;
+}
+.status-no-prazo { background-color: #5bc0de; } /* Azul claro para "No Prazo" no timeline */
+
+.timeline-legend {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+.legend-red-bg { background-color: #d9534f; color: white; padding: 3px 6px; border-radius: 3px; margin-left: 5px;}
+.legend-yellow-bg { background-color: #f0ad4e; color: black; padding: 3px 6px; border-radius: 3px; margin-left: 5px;}
+.legend-green-bg { background-color: #5bc0de; /* Cor do "NO PRAZO" na imagem */ color: white; padding: 3px 6px; border-radius: 3px; margin-left: 5px;}
+
+
+/* Seção Inferior (Melhoria, Atrasos) */
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #252525; /* Fundo mais escuro para esta seção */
+    border-radius: 8px;
+    gap: 15px;
+}
+.continuous-improvement, .delays-adjustments {
+    background-color: #383838;
+    padding: 15px;
+    border-radius: 4px;
+    flex-basis: 49%;
+}
+.continuous-improvement h4, .delays-adjustments h4 {
+    margin-top: 0;
+    color: #e0e0e0;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.continuous-improvement p, .delays-adjustments p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #ccc;
+}
+
+/* Rodapé */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 15px 20px;
+    background-color: #1a1a1a; /* Mesmo preto do cabeçalho */
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+.platform-print {
+    font-size: 0.9em;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+}
+.owner-info {
+    text-align: right;
+}
+.owner-info strong {
+    font-size: 1.2em;
+}
+.owner-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .top-section, .bottom-info {
+        flex-direction: column;
+    }
+    .strategic-objective {
+        margin-top: 15px;
+    }
+    .timeline-grid {
+        grid-template-columns: 1fr; /* Simplifica a grid em telas menores */
+    }
+    .timeline-header, .timeline-row {
+        display: contents; /* Para manter a estrutura da grid */
+    }
+    .timeline-header > div, .timeline-row > div {
+        grid-column: 1 / -1 !important; /* Faz cada célula ocupar a linha toda */
+        border-bottom: 1px solid #555;
+    }
+    .timeline-row > div:not(:first-child):not(:nth-child(2)) { /* Esconde meses em telas pequenas, exceto objetivo e épico */
+        /* display: none; */ /* Ou ajuste para melhor visualização */
+    }
+}
