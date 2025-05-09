@@ -127,9 +127,8 @@
 
         <section class="roadmap-timeline">
             <h3>Roadmap <span class="roadmap-subtitle">Tecnologia | Processos | Cliente</span></h3>
-            <div class="timeline-grid">
-                <div class="timeline-header">
-                    <div>OBJETIVOS</div>
+            <div class="timeline-grid" id="timelineGrid">
+                <div class="timeline-header-row"> <div>OBJETIVOS</div>
                     <div>ÉPICOS</div>
                     <div>Janeiro</div>
                     <div>Fevereiro</div>
@@ -138,66 +137,11 @@
                     <div>Maio</div>
                     <div>Junho</div>
                 </div>
-                <div class="timeline-row">
-                    <div>Objetivo de negócio 1</div>
-                    <div>Épico (agrupamento de features que atendem um objetivo de negócio) 1</div>
-                    <div class="timeline-bar-container">
-                        <div class="timeline-bar status-green" style="width: 80%; margin-left: 10%;"></div>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="timeline-row">
-                    <div>Objetivo de negócio 2</div>
-                    <div>Épico 2</div>
-                    <div></div>
-                    <div class="timeline-bar-container">
-                         <div class="timeline-bar status-yellow" style="width: 70%; margin-left: 0%;"></div>
-                    </div>
-                    <div class="timeline-bar-container">
-                         <div class="timeline-bar status-yellow continue" style="width: 30%; margin-left: 0;"></div>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                 <div class="timeline-row">
-                    <div>Objetivo de negócio 3</div>
-                    <div>Épico 3</div>
-                    <div></div>
-                    <div></div>
-                    <div class="timeline-bar-container">
-                        <div class="timeline-bar status-red" style="width: 100%;"></div>
-                    </div>
-                    <div class="timeline-bar-container">
-                        <div class="timeline-bar status-red continue" style="width: 60%;"></div>
-                    </div>
-                    <div></div>
-                    <div></div>
-                </div>
-                 <div class="timeline-row">
-                    <div>Objetivo de negócio 4</div>
-                    <div>Épico 4</div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                     <div class="timeline-bar-container">
-                        <div class="timeline-bar status-no-prazo" style="width: 90%; margin-left: 5%;"></div>
-                    </div>
-                     <div class="timeline-bar-container">
-                        <div class="timeline-bar status-no-prazo continue" style="width: 40%;"></div>
-                    </div>
-                </div>
                 </div>
             <div class="timeline-legend">
                 <span class="legend-item legend-red-bg">ATRASADO</span>
                 <span class="legend-item legend-yellow-bg">EM ALERTA</span>
-                <span class="legend-item legend-green-bg">NO PRAZO</span>
-            </div>
+                <span class="legend-item legend-green-bg" id="legendNoPrazo">NO PRAZO</span> </div>
         </section>
 
         <section class="bottom-info">
@@ -223,5 +167,6 @@
             </div>
         </footer>
     </div>
+    <script src="timeline.js" defer></script>
 </body>
 </html>
